@@ -1,5 +1,4 @@
 //Using function in Object
-
 let obj={
     name:"Alaxnader",
     collage:"Oxford university",
@@ -12,7 +11,7 @@ let obj={
         //The Collage of undefined is undefined
         console.log(this) //{}
     }
-
+    
 }
 obj.userDetail()
 obj.userEdu()
