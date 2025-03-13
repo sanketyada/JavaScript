@@ -16,5 +16,5 @@ let obj={
     name:"Randeep",
     age:23,
 }
-//Note: Object are Not iterable using thsi method 
+//Note: Object are Not iterable using this method 
 //to iterate on object use for in method
