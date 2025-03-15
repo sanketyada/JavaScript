@@ -1,0 +1,29 @@
+<!-- How to handel NodeList and Html Collection -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Products">
+      <li class="item">TV</li>
+      <li class="item">Fridge</li>
+      <li class="item">Laptop</li>
+      <li class="item">Mobile</li>
+      <li class="item">AC</li>
+    </div>
+  </body>
+  <script>
+    let Item = document.querySelectorAll(".item");
+    console.log(Item);
+    //NodeList(5) [li.item, li.item, li.item, li.item, li.item]
+    console.log(Item[0])  //<li class="item">TV</li>
+
+    Item.forEach((element)=>{
+        //console.log(element)
+        element.style.backgroundColor = "teal";
+    })
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sport Day</h1>
+    <p id="name">Players Name</p>
+    <div>
+      <h3 class="pname">Rohit Sharma</h3>
+      <h3 class="pname">Ajinke Rahane</h3>
+      <h3 class="pname">MS Dhoni</h3>
+      <h3 class="pname">Virat Kohh3</h3>
+      <h3 class="pname">Ravindra Jadeja</h3>
+    </div>
+  </body>
+  <script>
+    //for Slecting First element
+    let firstPlayerName = document.querySelector(".pname");
+    console.log(firstPlayerName);
+    //it return <h3 class="pname">Rohit Sharma</h3>
+
+    //for Selecting Group of Element
+    let AllPlayers = document.querySelectorAll(".pname");
+    console.log(AllPlayers);
+    //it return NodeList(5) [h3.pname, h3.pname, h3.pname, h3.pname, h3.pname]
+  </script>
+</html>

@@ -1,0 +1,36 @@
+<!-- Dom Manipulation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation</title>
+  </head>
+  <body>
+    <h1 id="heading">FlipKart</h1>
+    <p id="punchline">A palce to buy Each and Every Product That you Need</p>
+    <div id="Product">
+      <li class="item">Pulse</li>
+      <li class="item">Rice</li>
+      <li class="item">Soap</li>
+      <li class="item">Kurkure</li>
+      <li class="item">Drawing Box</li>
+    </div>
+  </body>
+  <script>
+    //Manipulation
+    let head = document.getElementById("heading");
+    console.log(head);
+    console.log(head.id);
+    //head.innerHTML="<h2>Amazone</h1>" //manupulation by html code
+    //head.innerText="yaho" //manupulation
+    head.textContent = "Snapdeal"; //manupulation
+
+    //setting
+    let p = document.getElementById("punchline");
+    p.className="smaplePara"  //if there any class before it will overwrite
+    p.setAttribute("target","_blank")
+    console.log(p)
+    console.log(p.getAttribute('class')) //smaplePara
+  </script>
+</html>

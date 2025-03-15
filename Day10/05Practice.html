@@ -1,0 +1,33 @@
+<!-- Dom Manipulationby queryselctor -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Lenovo</h1>
+    <h1>Home Appliences</h1>
+    <p>Lenovo:We does't Sells Product We sells Emotions</p>
+ </body>
+ <script>
+    //Manipulation
+    let head=document.querySelector("h1")  //it selected ony first h1
+    console.log(head) //<h1>Lenovo</h1>
+    head.setAttribute("id","Head")  //<h1 id="Head">Lenovo</h>
+    head.innerHTML="Samsung"
+    //for all H1 
+    let head2=document.querySelectorAll("h1")
+    console.log(head2)
+    //it returned NodeList(2) [h1#Head, h1]
+    //How to act on it
+    console.log(head2[0]) //<h1 id="Head">Samsung</h1> now you can manupulte
+    console.log(head2[1])  //<h1>Home Appliences</h1>  now you can manupulte
+ </script>
+ </html>

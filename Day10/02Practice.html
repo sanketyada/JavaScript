@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jio HotStar</h1>
+    <div>
+      <p id="para">
+        A plateform which servs every types of movies from Every Country.
+      </p>
+      <li class="list">SuperMan</li>
+      <li class="list">IronMan</li>
+      <li class="list">3 Idiots</li>
+      <li class="list">Bahubali</li>
+      <li class="list">Laxmi</li>
+    </div>
+  </body>
+  <script>
+    //Selecting Element by Id
+    let p = document.getElementById("para");
+    console.log(p);
+    // <p id="para">
+
+    //Selecting Element by Classname
+    let l = document.getElementsByClassName("list");
+    console.log(l);
+    //HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
+
+    //Selcting Element by tagName
+    let tag = document.getElementsByTagName("p");
+    console.log(tag);
+    //HTMLCollection [p#para, para: p#para]
+  </script>
+</html>

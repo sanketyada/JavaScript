@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Products">
+        <li class="item">TV</li>
+        <li class="item">Fridge</li>
+        <li class="item">Laptop</li>
+        <li class="item">Mobile</li>
+        <li class="item">AC</li>
+      </div>
+</body>
+<script>
+    //Html Collection
+    let myItems=document.getElementsByClassName("item")
+    console.log(myItems)
+    //HTMLCollection(5) [li.item, li.item, li.item, li.item, li.item]
+    //convert it into array
+    let arr = Array.from(myItems)
+    console.log(arr)
+    //(5) [li.item, li.item, li.item, li.item, li.item]
+    arr.forEach((item)=>{
+        console.log(item)
+    })
+  </script>
+</html>
