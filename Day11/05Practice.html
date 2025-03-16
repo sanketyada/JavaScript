@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HeaGon</h1>
+    <ul id="unorderdList">
+        <li id="first">Apple</li>
+        <li>Banana</li>
+    </ul>
+</body>
+<script>
+    //Edditing Dom
+    let Head=document.querySelector("h1")
+    Head.textContent="TCS"
+
+    //Replaceing
+    let oldLi=document.querySelector("#first")
+    let newLi=document.createElement("li")
+    newLi.innerText="DragonFruit"
+    oldLi.replaceWith(newLi) //Apple become DragonFruit
+    
+    //Removing
+    //Head.remove()  //Head selected  upside
+
+
+</script>
+</html>

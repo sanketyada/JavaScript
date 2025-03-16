@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        
+    </div>
+</body>
+<script>
+    let DivParent=document.querySelector(".parent")
+    //Creating New Element on Document
+    let para=document.createElement('p');
+    //Adding Attribute to para
+    para.className="paragraph"
+    para.id="Desc"
+    para.setAttribute("placeholder","UserDescription")
+    para.style.backgroundColor="teal"
+    para.style.padding="10px"
+    //Adding Text to para
+    para.innerHTML="Sanket Yadav"
+    //Appending Para to document(Webpage)
+    //document.body.append(para) or
+    DivParent.append(para)
+    
+</script>
+</html>

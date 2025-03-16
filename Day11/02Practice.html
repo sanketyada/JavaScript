@@ -1,0 +1,27 @@
+<!-- Accessing Child -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <div id="item">Hair Color</div>
+        <div id="item">Banana</div>
+        <div id="item">Ginger</div>
+      </div>
+</body>
+<script>
+    //Accsessing child from parent
+  let parent=document.querySelector(".product")
+  console.log(parent)
+  console.log(parent.children[2])
+
+  //Accsessing parent from child
+  let child=document.querySelector("#item")
+  console.log(child) //<div id="item">Hair Color</div>
+  console.log(child.parentElement) // <div class="product"></div>
+</script>
+</html>

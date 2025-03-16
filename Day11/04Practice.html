@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+
+    </div>
+</body>
+<script>
+    let Parent=document.querySelector(".parent")
+    console.log(Parent)
+    //Note while Adding text innew created Element Optimized Approch is to
+    //Creats a text node and append in that element
+
+    let newHead = document.createElement("h1")
+   /// newHead.innerHTML='Venottm'  //overWrite
+    let text=document.createTextNode("Venom") //Add new Text
+    Parent.append(text)
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #c3b5b5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+    </div>
+  </body>
+  <script>
+    //selcting Parent
+    let parent = document.querySelector(".product");
+    console.log(parent.firstElementChild); //first child
+    console.log(parent.lastElementChild); //last child child
+
+    //Modifying child innerText
+    console.log(parent.children); //Return HTML collection
+    console.log(parent.children[0]); //<div class="day">Monday</div>
+    parent.children[0].innerText = "Sanket"; //Monday become Sanket
+
+    //modifying by loop
+    for (let i = 0; i < parent.children.length; i++) {
+      parent.children[i].innerText = "Rajkumar";
+    }
+  </script>
+</html>
