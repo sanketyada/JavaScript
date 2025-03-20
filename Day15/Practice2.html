@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Button</button>
+    <button id="btn2">Button</button>
+</body>
+<script>
+    let button=document.querySelector("#btn")
+    let button2=document.querySelector("#btn2")
+    let body= document.body
+    //Onclick for baground Changeing
+    button.onclick=()=>{
+        let randomHexCode=Math.floor(Math.random()*1000000)
+        document.body.style.backgroundColor=`#${randomHexCode}`
+    }
+    //addEventListener for changing button text and Color
+    button2.addEventListener("click",()=>{
+        button2.innerHTML="You clicked The Button"
+        button2.style.backgroundColor="red"
+    })
+</script>
+</html>
