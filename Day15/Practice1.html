@@ -22,4 +22,12 @@
 <body>
     <button onclick=changeColor()>Change Changer</button>
 </body>
+<script>
+    //Onclick
+    function changeColor(){
+        let randomHexCode=Math.floor(Math.random()*1000000)
+        console.log(randomHexCode)
+        document.body.style.backgroundColor=`#${randomHexCode}`
+    }
+</script>
 </html>
