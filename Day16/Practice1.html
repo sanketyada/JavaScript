@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      #btn {
+        padding: 10px 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Submit form</button>
+    <h2>Click aftre 1 sec its color changed to red</h2>
+  </body>
+  <script>
+    //Javascript--->Syncronous
+    //          --->Single Threaded
+
+    //But using some method and function we make it Asynchorus
+    //for acting on data fatched from Server or Apis
+    //SetTime Out
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", (e) => {
+      let k = setTimeout(() => {
+        document.body.style.backgroundColor="red"
+      }, 1000); 
+    });
+  </script>
+</html>

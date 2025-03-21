@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>V8 Engine and Sending Api request</h1>
+</body>
+<script>
+    const requestUrl="https://api.github.com/users/sanketyada"
+    const xhr= new XMLHttpRequest();
+    xhr.open("Get",requestUrl)
+    xhr.onreadystatechange=()=>{
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+            let data=JSON.parse(xhr.responseText);
+            console.log(typeof data)
+            console.log(data)
+            console.log("Username :"+data.name)
+            console.log("Location:"+data.location)
+        }
+    }
+    xhr.send()
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <button>Start</button>
+    <h2> click After 1sec it will Start color changing</h2>
+    <button id="btnStop" onclick=stopChange()>Stop</button>
+</body>
+<script>
+    let btn=document.querySelector("button")
+    let btnStop=document.querySelector("btnStop")
+    let set;
+    btn.addEventListener("click",()=>{
+        set=setInterval(()=>{
+            let random=Math.floor(Math.random()*1000000)
+            console.log(random)
+            document.body.style.backgroundColor=`#${random}`
+        },1000);
+
+    })
+        function stopChange(){
+            clearInterval(set)
+        }
+</script>
+</html>
