@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #5f5757;
+            text-align: center;
+        }
+        input{
+            border-radius: 5px;
+        }
+        button{
+            padding: 5px 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess a Number</h1>
+    <form action="">
+        <input type="text">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="pg"></p>
+    <p id="rg"></p>
+</body>
+<script>
+    let form=document.querySelector('form')
+    let num=Math.floor((Math.random()*10)+1)
+    console.log(num)
+    form.addEventListener('submit',(item)=>{
+        item.preventDefault();
+        let input=parseInt(document.querySelector('input').value)
+        if(input <0 && input >100){
+           console.log("Number Should Between 0-100") 
+        }
+        else if(input === num){
+            console.log("Number Guseed right")
+        }
+        else if(input >num){
+            console.log("Greater")
+        }
+        else{
+            console.log("Smaller")
+        }
+        
+    })
+</script>
+</html>
